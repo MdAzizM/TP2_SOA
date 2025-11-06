@@ -11,4 +11,21 @@ public class Calculatrice implements ICalculatrice {
     public int somme(@WebParam int a, @WebParam int b){
         return a + b;
     }
+
+    @Override
+    public int soustraction(int a, int b) {
+        return a - b;
+    }
+
+    @Override
+    public int multiplication(int a, int b) {
+        return a * b;
+    }
+
+    @Override
+    public int division(int a, int b) {
+        return a / b;
+    }
+
+
 }
